@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!-- Inline CSS -->
+<!--
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="color: blue;">
+    Título
+    <strong style="color: red;">alo</strong>
+  </h1>
+</body>
+</html>
+-->
+
+<!-- Style direto no Head -->
+<!--
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      color: blue;
+    }
+    strong {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Título
+    <strong>alo</strong>
+  </h1>
+</body>
+</html>
+-->
+
+<!-- Link stylesheet CSS -->
+<!--
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>
+    Título
+    <strong>alo</strong>
+  </h1>
+</body>
+</html>
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="especificidade.css">
+</head>
+<body>
+  <h1 class="title" id="my-title">Título <strong>alo</strong></h1>
+</body>
+</html>
+
+<!--
+  Ordem de priorização do CSS
+
+  inline > tag style > tag link
+
+  inline = estilo aplicado direto na tag
+  tag style = estilo aplicado na tag <style> dentro do <head>
+  tag link = estilo aplicado pelo arquivo css via <link>
+-->
+
+<!-- 
+  Especificidade
+
+  0 = Universal selector, combinators e negation pseudo-class (:not())
+  1 = Element type selector e pseudo-elements (::before, ::after)
+  10 = Classes e attribute selectors ([type="radio"])
+  100 = ID selector
+  1000 = Inline
+-->
+
+<!--
+  A regra !important tem o maior critério de todos
+  Não é uma boa prática, evite usar
+  Ela quebra o fluxo natural da cascata
+-->

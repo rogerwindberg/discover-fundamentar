@@ -1,0 +1,24 @@
+/* Usando duas regras, separando por vírgula */
+#my-title, #my-title strong {
+  color: gray;
+}
+
+.title {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+/* Este aqui possui 111 de "força", por isso será priorizado
+h1.title#my-title {
+  color: blue;
+}
+*/
+body h1 {
+  color: orange;
+}
+
+* {
+  color: green;
+}

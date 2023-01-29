@@ -1,0 +1,115 @@
+<!--
+    <input type="url">
+
+    - Espera que o usuário digite uma url
+    - Irá validar se o valor digitado é uma url
+
+    # Atributos
+
+    - placeholder
+    - readonly | disabled
+    - value
+
+    - required
+
+    - minlength | maxlength
+        * O mínimo e/ou máximo valor que o campo irá conter
+    
+    - size
+        * Valor numérico indicando quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuário
+    
+    - pattern
+        * Uso de expressão regular para validar o campo
+        * exemplo: o usuário só poderá colocar domínio 
+        .com.br
+            * pattern=".*\.com\.br\/.*"
+    
+    - list
+        * o id de uma tag <datalist> que está no mesmo documento
+        * <datalist> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário, quais valores estão disponíveis
+            * Os valores <datalist> que não forem compatíveis com o campo, não serão apresentados como sugestão
+
+    - spellcheck
+        * Habilitar a verificação ortográfica para este input
+-->
+
+<!-- validação comum -->
+<form action="">
+    <label for="validacao-comum">validação comum:</label>
+    <input id="validacao-comum" type="url">
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- placeholder -->
+<form action="">
+    <label for="placeholder">placeholder:</label>
+    <input id="placeholder" type="url" placeholder="Alguma coisa">
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- value -->
+<form action="">
+    <label for="value">value:</label>
+    <input id="value" type="url" value="Algum valor">
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- readonly -->
+<form action="">
+    <label for="readonly">readonly:</label>
+    <input id="readonly" type="url" readonly>
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- disabled -->
+<form action="">
+    <label for="disabled">disabled:</label>
+    <input id="disabled" type="url" disabled>
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- required -->
+<form action="">
+    <label for="required">required:</label>
+    <input id="required" type="url" required>
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- minlength e maxlength -->
+<form action="">
+    <label for="minlength-e-maxlength">minlength e maxlength:</label>
+    <input id="minlength-e-maxlength" type="url" minlength="8" maxlength="16">
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- size -->
+<form action="">
+    <label for="size">size:</label>
+    <input id="size" type="url" size="8">
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- pattern -->
+<form action="">
+    <label for="pattern">pattern:</label>
+    <input id="pattern" type="url" placeholder="https://exemplo.com.br" pattern=".*\.com\.br.*" title="Somente domínios .com.br será aceitos">
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- list e datalist -->
+<datalist id="urlsdata">
+    <option>http://meusite.com.br</option>
+    <option>https://meusite.com.br</option>
+</datalist>
+<form action="">
+    <label for="list-e-datalist">list e datalist:</label>
+    <input id="list-e-datalist" type="url" list="urlsdata">
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- spellcheck -->
+<form action="">
+    <label for="spellcheck">spellcheck:</label>
+    <input id="spellcheck" type="url" spellcheck="true">
+    <button type="submit">Enviar</button>
+</form>

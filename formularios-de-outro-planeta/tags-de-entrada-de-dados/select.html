@@ -1,0 +1,46 @@
+<!--
+    <select>
+    
+    - Controle que fornece um menu de opções
+
+    <optin>
+    
+    - Contém as opções a serem selecionadas
+    - Atributos necessários
+        - value
+    
+    ATRIBUTOS ÚNICOS
+    - multiple
+        - Habilita múltiplas opções
+    - size
+        - Quando opções visíveis?
+-->
+
+<!-- value -->
+<label for="carselect">Qual o modelo do carro?</label>
+<select name="carmodel" id="carselect">
+    <option value="">Selecione o modelo</option>
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+</select>
+<br>
+<!-- o campo value é o que será enviado, os valores dentro das tags são apenas apresentados para o usuário -->
+
+<!-- multiple -->
+<label for="carselect">Qual o modelo do carro?</label>
+<select name="carmodel" id="carselect" multiple>
+    <option value="">Selecione o modelo</option>
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+    <option value="bmw">X6</option>
+</select>
+<br>
+
+<!-- size -->
+<label for="carselect">Qual o modelo do carro?</label>
+<select name="carmodel" id="carselect" size="2">
+    <option value="">Selecione o modelo</option>
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+    <option value="bmw">X6</option>
+</select>

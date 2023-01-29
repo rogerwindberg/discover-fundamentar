@@ -1,0 +1,52 @@
+<!--
+    <input type="number">
+
+    - Entrada de números
+
+    # Atributos
+    - min/max
+    - step
+    - placeholder
+    - value
+    - readonly
+    - disabled
+    - list | datalist
+-->
+
+<!-- min e max -->
+<form action="">
+    <label for="min-e-max">min e max:</label>
+    <input id="min-e-max" type="number" min="2" max="5">
+    <button>Enviar</button>
+</form>
+
+<!-- step e placeholder -->
+<form action="">
+    <label for="step-e-placeholder">step e placeholder:</label>
+    <input id="step-e-placeholder" type="number" step="2">
+    <button>Enviar</button>
+</form>
+
+<!-- value e readonly -->
+<form action="">
+    <label for="value-e-readonly">value e readonly:</label>
+    <input id="value-e-readonly" type="number" value="100" readonly>
+    <button>Enviar</button>
+</form>
+
+<!-- disabled -->
+<form action="">
+    <label for="disabled">disabled:</label>
+    <input id="disabled" type="number" disabled>
+    <button>Enviar</button>
+</form>
+
+<!-- list e datalist -->
+<datalist id="numeroslist">
+    <option>100</option>
+</datalist>
+<form action="">
+    <label for="disabled">disabled:</label>
+    <input id="disabled" type="number" list="numeroslist">
+    <button>Enviar</button>
+</form>

@@ -1,0 +1,15 @@
+# nano
+
+Descrição: Editor de texto
+
+Exemplo:
+
+nano arquivo.txt
+
+# vim
+
+Descrição: Editor de texto mais avançado
+
+Exemplo:
+
+vim arquivo.txt
